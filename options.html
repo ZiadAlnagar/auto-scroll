@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Icon + line -->
+<!-- "options_page": "options.html", -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Auto Scroll</h1>
+        <h2>Settings</h2>
+        <form action="">
+            <div class="control-group">
+                <label for="speed">Speed</label>
+                <div class="control">
+                    <div class="slider">
+                        <input id="speed" type="range" min="10" max="100" value="25"
+                            oninput="speedRangeValue.innerText = this.value" />
+                        <p id="speedRangeValue">25</p>
+                    </div>
+                    <span>default: 25</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="step">Step</label>
+                <div class="control">
+                    <div class="slider">
+                        <input id="step" type="range" min="1" max="10" value="1"
+                            oninput="stepRangeValue.innerText = this.value" />
+                        <p id="stepRangeValue">1</p>
+                    </div>
+                    <span>default: 1</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

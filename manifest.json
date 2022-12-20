@@ -1,0 +1,26 @@
+{
+    "name": "Auto Scroll",
+    "description": "scroll utilities",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "tabs", "storage", "scripting"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    
+    "icons": {
+        "16": "/icons/mouse-16.png",
+        "32": "/icons/mouse-32.png",
+        "48": "/icons/mouse-48.png",
+        "128": "/icons/mouse-128.png"
+    },
+    "action": {
+        "default_icons": {
+            "16": "/icons/mouse-16.png",
+            "32": "/icons/mouse-32.png",
+            "48": "/icons/mouse-48.png",
+            "128": "/icons/mouse-128.png"
+        }
+    }
+}
